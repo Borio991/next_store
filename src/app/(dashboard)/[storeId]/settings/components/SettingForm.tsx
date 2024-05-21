@@ -103,7 +103,7 @@ function SettingForm({ initialData }: Props) {
         </form>
       </Form>
       <Separator />
-      <ApiAlert title="NEXT_PUBLIC_API_URL" description={`${origin}/api/stores/${storeId}`} variant="public" />
+      <ApiAlert title="NEXT_PUBLIC_API_URL" description={`${origin}/api/${storeId}`} variant="public" />
     </>
   );
 }

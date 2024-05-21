@@ -17,7 +17,7 @@ function MainNav({ className, ...props }: React.HtmlHTMLAttributes<HTMLElement>)
   const routes: IRoute[] = [
     {
       href: `/${params.storeId}`,
-      label: 'Overvew',
+      label: 'Overview',
       active: pathname === `/${params.storeId}`,
     },
     {

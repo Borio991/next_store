@@ -38,7 +38,6 @@ export async function POST(req: Request, { params }: { params: { storeId: string
         storeId: params.storeId,
       },
     });
-    console.log(billboard);
     return NextResponse.json(billboard);
   } catch (error) {
     console.log(`BILLBOARD_POST`, error);

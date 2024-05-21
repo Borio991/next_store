@@ -29,7 +29,6 @@ function CellActions({ data }: Props) {
     navigator.clipboard.writeText(copy);
     toast('Category id Copied.');
   }
-  console.log(data);
 
   async function onDelete() {
     try {

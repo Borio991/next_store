@@ -14,9 +14,7 @@ function Page() {
       ))}
       <CldUploadWidget
         onSuccess={(results: any) => {
-          console.log(results.info.secure_url);
           setContent((prev) => [...prev, results.info.secure_url]);
-          //   setContent([...content, results.info.secure_url]);
         }}
         uploadPreset="qqsjv6rv"
       >

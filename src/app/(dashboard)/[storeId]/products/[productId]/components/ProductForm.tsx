@@ -40,7 +40,6 @@ const productFormSchema = z.object({
 type ProductFormValues = z.infer<typeof productFormSchema>;
 
 function ProductForm({ initialData, categories, sizes, colors }: Props) {
-  console.log('initialData : ', initialData);
   const { storeId, productId } = useParams();
   const router = useRouter();
 
@@ -102,8 +101,6 @@ function ProductForm({ initialData, categories, sizes, colors }: Props) {
       setLoading(false);
     }
   }
-
-  console.log('form values :', form.getValues());
 
   return (
     <>

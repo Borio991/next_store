@@ -53,7 +53,6 @@ export async function PATCH(req: Request, { params }: { params: { storeId: strin
       return new NextResponse('Unauthorized', { status: 403 });
     }
 
-    console.log(params);
     const billboard = await db.billboard.update({
       where: {
         id: params.billboardId,
@@ -66,7 +65,6 @@ export async function PATCH(req: Request, { params }: { params: { storeId: strin
     if (!billboard) {
       return new NextResponse('billboard id is required', { status: 400 });
     }
-    console.log(billboard);
 
     return NextResponse.json('');
   } catch (error) {

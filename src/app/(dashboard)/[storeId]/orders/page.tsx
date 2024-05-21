@@ -1,7 +1,6 @@
 import db from '@/lib/prismadb';
-import BillboardClient from './components/OrderClient';
-import { OrderColumn } from '@/app/(dashboard)/[storeId]/orders/components/columns';
 import { formatter } from '@/lib/utils';
+import OrderClient from './components/OrderClient';
 
 async function OrdersPage({ params }: { params: { storeId: string } }) {
   const orders = await db.order.findMany({
@@ -36,7 +35,7 @@ async function OrdersPage({ params }: { params: { storeId: string } }) {
 
   return (
     <div className="p-8 pt-6 space-y-4 flex-1">
-      <BillboardClient orders={formattedOrders} />
+      <OrderClient orders={formattedOrders} />
     </div>
   );
 }

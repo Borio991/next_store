@@ -1,7 +1,6 @@
 'use client';
 import { OrderColumn, columns } from './columns';
 import Heading from '@/components/Heading';
-import ApiList from '@/components/ui/ApiList';
 import { DataTable } from '@/components/ui/data-table';
 import { Separator } from '@/components/ui/separator';
 
